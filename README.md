@@ -19,7 +19,7 @@
 <li>Follow the steps to ensure all the system environment variables are setup correctly.</li>
 https://www.tutorialspoint.com/maven/maven_environment_setup.htm
 <li>Download and install Git</li>
-<li>Clone the Git repository - https://github.com/dabrahamsen904/coverwhale-test-automation to local folder.</li>
+<li>Clone the Git repository - {repo}to local folder.</li>
 <li>Open command prompt and navigate to directory where project is cloned and run following command:</li>
 a.	Mvn clean
 <li>Wait till it completes the process and shows “Build Success” status.</li>
