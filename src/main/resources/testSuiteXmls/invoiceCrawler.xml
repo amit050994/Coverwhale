@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" verbose="8">
+	<listeners>
+		<listener
+			class-name="com.coverwhale.listeners.CustomReporter" />
+		<listener class-name="com.coverwhale.listeners.RetryListener" />
+	</listeners>
+
+ <test name="InvoiceCrawler">
+	<parameter name="browser" value="chrome" />
+	<parameter name="nodeURL" value="" />
+	<classes>
+		<class name="com.coverwhale.crawler.invoicedoc.InvoiceCrawler">
+			<methods>
+				<include name="read_invoice_documents" />
+			</methods>
+		</class>
+	</classes>
+</test>
+
+</suite>

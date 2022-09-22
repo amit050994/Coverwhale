@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" verbose="8">
+	<listeners>
+		<listener
+			class-name="com.coverwhale.listeners.CustomReporter" />
+		<listener class-name="com.coverwhale.listeners.RetryListener" />
+	</listeners>
+
+	<test name="BeforeSuite Configuration">
+		<classes>
+			<class name="com.coverwhale.core.SuiteConfiguration">
+			</class>
+		</classes>
+	</test>
+
+	<test name="InvoiceTestTX">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestTX">
+				<methods>
+					<include name="TC_04_01" />
+					<include name="TC_04_02" />
+					<include name="TC_04_03" />
+					<include name="TC_04_04" />
+					<include name="TC_04_05" />
+					<include name="TC_04_06" />
+					<include name="TC_04_07" />
+					<include name="TC_04_08" />
+					<include name="TC_04_09" />
+					<include name="TC_04_10" />
+					<include name="TC_04_11" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvoiceTestMS">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestMS">
+				<methods>
+					<include name="TC_05_01" />
+					<include name="TC_05_02" />
+					<include name="TC_05_03" />
+					<include name="TC_05_04" />
+					<include name="TC_05_05" />
+					<include name="TC_05_06" />
+					<include name="TC_05_07" />
+					<include name="TC_05_08" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+<test name="InvoiceTestPA">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestPA">
+				<methods>
+					<include name="TC_06_01" />
+					<include name="TC_06_02" />
+					<include name="TC_06_03" />
+					<include name="TC_06_04" />
+					<include name="TC_06_05" />
+					<include name="TC_06_06" />
+					<include name="TC_06_07" />
+					<include name="TC_06_08" />
+					<include name="TC_06_09" />
+					<include name="TC_06_10" />
+					<include name="TC_06_11" />
+					<include name="TC_06_12" />
+					<include name="TC_06_13" />
+					<include name="TC_06_14" />
+					<include name="TC_06_15" />
+					<include name="TC_06_16" />
+					<include name="TC_06_17" />
+					<include name="TC_06_18" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+		<test name="InvoiceTestCA">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestCA">
+				<methods>
+					<include name="TC_07_01" />
+					<include name="TC_07_02" />
+					<include name="TC_07_03" />
+					<include name="TC_07_04" />
+					<include name="TC_07_05" />
+					<include name="TC_07_06" />
+					<include name="TC_07_07" />
+					<include name="TC_07_08" />
+					<include name="TC_07_09" />
+					<include name="TC_07_10" />
+					<include name="TC_07_11" />
+					<include name="TC_07_12" />
+					<include name="TC_07_13" />
+					<include name="TC_07_14" />
+					<include name="TC_07_15" />
+					<include name="TC_07_16" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvoiceTestNJ">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestNJ">
+				<methods>
+					<include name="TC_08_01" />
+					<include name="TC_08_02" />
+					<include name="TC_08_03" />
+					<include name="TC_08_04" />
+					<include name="TC_08_05" />
+					<include name="TC_08_06" />
+					<include name="TC_08_07" />
+					<include name="TC_08_08" />
+					<include name="TC_08_09" />
+					<include name="TC_08_10" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+		<test name="InvoiceTestOR">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestOR">
+				<methods>
+					<include name="TC_09_01" />
+					<include name="TC_09_02" />
+					<include name="TC_09_03" />
+					<include name="TC_09_04" />
+					<include name="TC_09_05" />
+					<include name="TC_09_06" />
+					<include name="TC_09_07" />
+					<include name="TC_09_08" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="InvoiceTestNV">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestNV">
+				<methods>
+					<include name="TC_10_01" />
+					<include name="TC_10_02" />
+					<include name="TC_10_03" />
+					<include name="TC_10_04" />
+					<include name="TC_10_05" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvoiceTestGA">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestGA">
+				<methods>
+					<include name="TC_11_01" />
+					<include name="TC_11_02" />
+					<include name="TC_11_03" />
+					<include name="TC_11_04" />
+					<include name="TC_11_05" />
+					<include name="TC_11_06" />
+					<include name="TC_11_07" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvoiceTestIL">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestIL">
+				<methods>
+					<include name="TC_12_01" />
+					<include name="TC_12_02" />
+					<include name="TC_12_03" />
+					<include name="TC_12_04" />
+					<include name="TC_12_05" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvoiceTestMN">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestMN">
+				<methods>
+					<include name="TC_13_01" />
+					<include name="TC_13_02" />
+					<include name="TC_13_03" />
+					<include name="TC_13_04" />
+					<include name="TC_13_05" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvoiceTestTN">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestTN">
+				<methods>
+					<include name="TC_14_01" />
+					<include name="TC_14_02" />
+					<include name="TC_14_03" />
+					<include name="TC_14_04" />
+					<include name="TC_14_05" />
+					<include name="TC_14_06" />
+					<include name="TC_14_07" />
+					<include name="TC_14_08" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvoiceTestNC">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.coverwhale.tests.web.InvoiceTestNC">
+				<methods>
+					<include name="TC_15_01" />
+					<include name="TC_15_02" />
+					<include name="TC_15_03" />
+					<include name="TC_15_04" />
+					<include name="TC_15_05" />
+					<include name="TC_15_06" />
+					<include name="TC_15_07" />
+					<include name="TC_15_08" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
